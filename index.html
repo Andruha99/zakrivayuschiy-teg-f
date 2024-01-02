@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
     <title>Закрывающий тег</title>
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -13,7 +17,9 @@
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <header class="header">
+    <header class="header block-width">
+      <span class="header__logo">&lt;/html&gt;</span>
+      <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -40,7 +46,69 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main class="main block-width">
+      <ul class="content-list">
+        <li class="content-card">
+          <h2 class="content-card__title">
+            Фритрек и нулевой спринт: Подготовка к работе
+          </h2>
+          <div class="content-card__decor">
+            <img src="./images/image.png" alt="" class="content-card__image" />
+            <span class="content-card__wrapper">&lt;/html&gt;</span>
+          </div>
+          <div class="content-card__text">
+            <p>
+              Это было самое начало пути. На этом этапе важно было проникнуться
+              основами и настроиться на учёбу. И, возможно, подумать, как новые
+              знания могут повлиять на ваше будущее.
+            </p>
+            <p>Место для ваших воспоминаний о начале обучения.</p>
+          </div>
+          <div class="content-card__button">
+            <button class="card__icon-button" type="button">
+              <svg
+                width="39"
+                height="36"
+                viewBox="0 0 39 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12 6H9V9H12V6Z" fill="black" />
+                <path d="M15 6H12V9H15V6Z" fill="black" />
+                <path d="M9 9H6V12H9V9Z" fill="black" />
+                <path d="M9 12H6V15H9V12Z" fill="black" />
+                <path d="M9 15H6V18H9V15Z" fill="black" />
+                <path d="M18 6H15V9H18V6Z" fill="black" />
+                <path d="M12 18H9V21H12V18Z" fill="black" />
+                <path d="M15 21H12V24H15V21Z" fill="black" />
+                <path d="M18 24H15V27H18V24Z" fill="black" />
+                <path d="M27 6H30V9H27V6Z" fill="black" />
+                <path d="M24 6H27V9H24V6Z" fill="black" />
+                <path d="M30 9H33V12H30V9Z" fill="black" />
+                <path d="M30 12H33V15H30V12Z" fill="black" />
+                <path d="M30 15H33V18H30V15Z" fill="black" />
+                <path d="M21 6H24V9H21V6Z" fill="black" />
+                <path d="M27 18H30V21H27V18Z" fill="black" />
+                <path d="M24 21H27V24H24V21Z" fill="black" />
+                <path d="M21 24H24V27H21V24Z" fill="black" />
+                <path d="M21 9H18V12H21V9Z" fill="black" />
+                <path d="M21 27H18V30H21V27Z" fill="black" />
+              </svg>
+            </button>
+            <button class="card__like-button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </li>
+      </ul>
+      <button class="save-button">
+        <svg width="39" height="39" viewBox="0 0 39 39">
+          <use href="./svg/floppy.svg#floppy" />
+        </svg>
+
+        <span class="save-button__text">Сохранить на память</span>
+      </button>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
