@@ -11,6 +11,8 @@
   --horizontal-background-color: #d3d3d3;
   --vertical-background-color-from: #e7e7e7;
   --vertical-background-color-to: #1a1a1a;
+  --button-color: #fff;
+  --heart-contour-color: #000;
 }
 
 :root.theme-dark {
@@ -20,6 +22,8 @@
 
   --main-color: #000;
   --accent-color: #00cc14;
+  --button-color: #00cc14;
+  --heart-contour-color: #00cc14;
   --header-font-weight: 785;
   --text-font-weight: 465;
 }
@@ -32,6 +36,8 @@
 
     --main-color: #000;
     --accent-color: #00cc14;
+    --button-color: #00cc14;
+    --heart-contour-color: #00cc14;
     --header-font-weight: 785;
     --text-font-weight: 465;
   }

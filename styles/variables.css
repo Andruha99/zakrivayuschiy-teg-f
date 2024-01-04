@@ -10,4 +10,7 @@
   --horizontal-background-color: #d3d3d3;
   --vertical-background-color-from: #e7e7e7;
   --vertical-background-color-to: #1a1a1a;
+  --button-color: #fff;
+  --heart-contour-color: #000;
+  --heart-filling-color: #ff0000;
 }

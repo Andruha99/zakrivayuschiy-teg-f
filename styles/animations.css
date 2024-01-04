@@ -21,3 +21,27 @@
     transform: translateX(-4px);
   }
 }
+
+@keyframes heart-scale {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes sparks-opacity {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
