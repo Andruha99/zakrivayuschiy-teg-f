@@ -129,6 +129,12 @@
   margin: 0 auto;
 }
 
+.content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 .content-card {
   background-color: var(--main-color);
   color: var(--accent-color);
@@ -298,7 +304,8 @@
 }
 
 .card__like-button,
-.save-button {
+.save-button,
+.save-content__button {
   position: relative;
   color: var(--button-color);
   transition: 0.3s box-shadow ease;
@@ -306,17 +313,20 @@
 }
 
 .card__like-button:focus,
-.save-button:focus {
+.save-button:focus,
+.save-content__button:focus {
   outline: none;
 }
 
 .card__like-button:focus-visible,
-.save-button:focus-visible {
+.save-button:focus-visible,
+.save-content__button:focus-visible {
   box-shadow: 2px 2px 0 0 var(--accent-color);
 }
 
 .card__like-button::after,
-.save-button::after {
+.save-button::after,
+.save-content__button::after {
   content: "";
   position: absolute;
   top: 0;
@@ -330,8 +340,44 @@
 }
 
 .card__like-button:hover::after,
-.save-button:hover::after {
+.save-button:hover::after,
+.save-content__button:hover::after {
   transform: scaleX(1);
+}
+
+.save-content {
+  padding: 30px;
+  background-color: var(--main-color);
+  color: var(--accent-color);
+}
+
+.save-content[open]::backdrop {
+  background-color: #000;
+  opacity: 0.75;
+}
+
+.save-content__info {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  inline-size: clamp(16.0625rem, 15.2702rem + 3.3803vw, 18.3125rem);
+}
+
+.save-content__text {
+  font-family: var(--accent-font);
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  inline-size: clamp(12.375rem, 11.5827rem + 3.3803vw, 14.625rem);
+}
+
+.save-content__button {
+  padding: 13px 0;
+  inline-size: 100%;
+  background-color: transparent;
+  font-family: var(--accent-font), serif;
+  border: 2px solid var(--accent-color);
+  text-transform: uppercase;
 }
 
 @media (width <= 376px) {
