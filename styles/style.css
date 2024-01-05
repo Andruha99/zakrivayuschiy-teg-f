@@ -151,11 +151,16 @@
 
 .content-card__decor {
   position: relative;
+  inline-size: 100%;
+  block-size: 696px;
   overflow: hidden;
 }
 
 .content-card__image {
-  width: 100%;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .content-card__wrapper {
@@ -389,31 +394,37 @@
 }
 
 .brightness-filter {
-  filter: brightness(220%);
+  filter: brightness(80%);
 }
 
 .blur-filter {
-  filter: blur(1rem);
+  filter: blur(0.4rem);
 }
 
 .grayscale-filter {
-  filter: grayscale(50%);
+  filter: grayscale(1);
 }
 
 .saturate-filter {
-  filter: saturate(150%);
+  filter: saturate(50%);
 }
 
 .sepia-filter {
   filter: sepia(80%);
 }
 
-.invert-filter {
-  filter: invert(0.7);
+.hue-rotate-filter {
+  filter: hue-rotate(180deg);
 }
 
 .multiple-filter {
   filter: saturate(170%) invert(0.2) brightness(160%) blur(0.1rem);
+}
+
+@media (width <= 700px) {
+  .content-card__decor {
+    block-size: clamp(23.4375rem, 0.2885rem + 98.7692vw, 43.5rem);
+  }
 }
 
 @media (width <= 376px) {
