@@ -383,6 +383,7 @@
 .save-content__info {
   display: flex;
   gap: 20px;
+  align-items: center;
   margin-bottom: 30px;
   inline-size: clamp(16.0625rem, 15.2702rem + 3.3803vw, 18.3125rem);
 }
