@@ -369,14 +369,6 @@
   transform: scaleX(1);
 }
 
-.save-button svg {
-  position: relative;
-  z-index: 1;
-  inline-size: 21px;
-  block-size: 21px;
-  mix-blend-mode: difference;
-}
-
 .save-content[open] {
   padding: 30px;
   background-color: var(--main-color);
@@ -409,7 +401,7 @@
 }
 
 .save-content__button {
-  padding: 13px 0;
+  padding: 10px 0;
   inline-size: 100%;
   background-color: transparent;
   font-family: var(--accent-font), fantasy;
@@ -454,6 +446,10 @@
 @media (width <= 376px) {
   .block-width {
     max-inline-size: 100%;
+  }
+
+  .save-content[open] {
+    padding: 30px 39px;
   }
 
   .save-button {
