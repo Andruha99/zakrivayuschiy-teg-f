@@ -49,7 +49,7 @@
   margin: 102px auto 100px;
   padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem) 0 25px;
   background-color: var(--main-color);
-  font-family: var(--accent-font), serif;
+  font-family: var(--accent-font), fantasy;
   font-size: 23px;
   text-transform: uppercase;
   border: 2px solid var(--accent-color);
@@ -58,6 +58,7 @@
 .header__logo {
   margin-bottom: 20px;
   font-size: clamp(3.0625rem, 2.7154rem + 1.4967vw, 4.0625rem);
+  text-decoration: none;
 }
 
 .header__title {
@@ -147,6 +148,7 @@
   padding: 3px 10px;
   font-size: 18px;
   font-variation-settings: "wght" var(--header-font-weight);
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .content-card__decor {
@@ -168,7 +170,7 @@
   top: 25px;
   right: clamp(0.8125rem, 0.5484rem + 1.1268vw, 1.5625rem);
   mix-blend-mode: hard-light;
-  font-family: var(--accent-font), serif;
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   color: var(--accent-color);
   opacity: 0.5;
@@ -191,14 +193,15 @@
   display: flex;
   flex-direction: column;
   gap: 27px;
-  margin: 26px 25px;
+  padding: 26px 25px;
   font-size: 18px;
   line-height: 21px;
+  border-top: 2px solid var(--accent-color);
 }
 
 .content-card__button {
   display: flex;
-  gap: 4px;
+  gap: 1px;
   justify-content: flex-end;
   align-items: center;
   margin: 0 25px 25px 0;
@@ -299,7 +302,7 @@
   padding: 11px 0;
   inline-size: 130px;
   background-color: transparent;
-  font-family: var(--accent-font), serif;
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   border: 2px solid var(--accent-color);
 }
@@ -311,9 +314,17 @@
   margin: 54px auto 105px;
   padding: 15px 21px 15px 19px;
   background-color: var(--main-color);
-  font-family: var(--accent-font), serif;
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   border: 2px solid var(--accent-color);
+}
+
+.save-button svg {
+  position: relative;
+  z-index: 1;
+  inline-size: 21px;
+  block-size: 21px;
+  mix-blend-mode: difference;
 }
 
 .card__like-button,
@@ -358,7 +369,15 @@
   transform: scaleX(1);
 }
 
-.save-content {
+.save-button svg {
+  position: relative;
+  z-index: 1;
+  inline-size: 21px;
+  block-size: 21px;
+  mix-blend-mode: difference;
+}
+
+.save-content[open] {
   padding: 30px;
   background-color: var(--main-color);
   color: var(--accent-color);
@@ -376,8 +395,13 @@
   inline-size: clamp(16.0625rem, 15.2702rem + 3.3803vw, 18.3125rem);
 }
 
+.save-content__info svg {
+  inline-size: 39px;
+  block-size: 39px;
+}
+
 .save-content__text {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
@@ -388,7 +412,7 @@
   padding: 13px 0;
   inline-size: 100%;
   background-color: transparent;
-  font-family: var(--accent-font), serif;
+  font-family: var(--accent-font), fantasy;
   border: 2px solid var(--accent-color);
   text-transform: uppercase;
 }
